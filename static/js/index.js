@@ -1,15 +1,17 @@
 const request = require("request");
 const ipc = require('electron').ipcRenderer;
 
+let data = document.getElementById("data");
 
 request.get("http://hacknotifier.herokuapp.com/",(err,response,body)=>{
 
+    data.innerHTML = '';
     if(!body)
-        console.log("Empty");
+        data.innerHTML = "<h1> Could not load hackathons </h1>";
     else{
-
+         
         for(let entry of JSON.parse(body)){
-            document.getElementById("data").innerHTML += `<div class="row">
+            data.innerHTML += `<div class="row">
                 <div class="col s12 m5" style="width:100%">
                 <div class="card-panel teal">
                 <span class="white-text">
