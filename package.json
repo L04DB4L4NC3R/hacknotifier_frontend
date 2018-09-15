@@ -1,0 +1,23 @@
+{
+  "name": "hacknotifier_frontend",
+  "version": "1.0.0",
+  "description": "hacknotifier electron app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angadsharma1016/hacknotifier_frontend.git"
+  },
+  "author": "angad sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angadsharma1016/hacknotifier_frontend/issues"
+  },
+  "homepage": "https://github.com/angadsharma1016/hacknotifier_frontend#readme",
+  "devDependencies": {
+    "electron": "^2.0.9"
+  }
+}
