@@ -1,6 +1,8 @@
 const {
     app,
-    BrowserWindow
+    BrowserWindow,
+    ipcMain,
+    shell
 } = require("electron");
 
 const path = require("path");
@@ -28,6 +30,10 @@ let createWindow = ()=>{
     });
 
 }
+
+ipcMain.on("linker",(e,arg)=>{
+    shell.openExternal(arg);
+});
 
 
 app.on("ready",createWindow);

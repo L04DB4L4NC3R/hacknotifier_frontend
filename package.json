@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"electron ."
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "homepage": "https://github.com/angadsharma1016/hacknotifier_frontend#readme",
   "devDependencies": {
     "electron": "^2.0.9"
+  },
+  "dependencies": {
+    "request": "^2.88.0"
   }
 }
