@@ -32,6 +32,7 @@ let createWindow = ()=>{
 }
 
 ipcMain.on("linker",(e,arg)=>{
+    console.log("Event triggered")
     shell.openExternal(arg);
 });
 
