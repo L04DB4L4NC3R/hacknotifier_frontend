@@ -20,7 +20,7 @@
   "homepage": "https://github.com/angadsharma1016/hacknotifier_frontend#readme",
   "devDependencies": {
     "electron": "^2.0.9",
-    "electron-packager": "^12.1.2"
+    "electron-packager": "^14.1.0"
   },
   "dependencies": {
     "request": "^2.88.0"
